@@ -40,7 +40,6 @@ public class Ball {
         this.color = color;
     }
 
-    @Override
     public String toString() {
         return "Ball{" + "radius=" + radius + ", color='" + color + '\'' + '}';
     }

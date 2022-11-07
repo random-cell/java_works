@@ -1,21 +1,43 @@
-package exercice1;
+public class Dog {
+  private String name;
+  private int age;
 
-import java.applet.Applet;
-import java.awt.*;
+  public Dog(String n, int a) {
+      name = n;
+      age = a;
+  }
 
-// Applet code for the "Hello, world!" example.
-// This should be saved in a file named as "HelloWorldApp.java".
-public class HelloWorldApp extends Applet {
-  // This method is mandatory(обязательный), but can be empty (i.e., have no actual code).
-  public void init() { }
+  public Dog(String n) {
+      name = n;
+      age = 0;
+  }
 
-  // This method is mandatory, but can be empty (i.e., have no actual code).
-  public void stop() { }
+  public Dog() {
+      name = "Pup";
+      age = 0;
+  }
 
-  public void paint(Graphics g) {
-    // Print a message on the screen (x=20, y=10).
-    g.drawString("Маша! Здравствуй! Hello, world!", 20, 10);
-    // Draws a circle on the screen (x=40, y=30).
-    g.drawArc(40, 30, 50, 50, 0, 360);
+  public String getName() {
+      return name;
+  }
+
+  public void setName(String name) {
+      this.name = name;
+  }
+
+  public int getAge() {
+      return age;
+  }
+
+  public void setAge(int age) {
+      this.age = age;
+  }
+
+  public String toString() {
+      return this.name + ", age " + this.age;
+  }
+
+  public void intoHumanAge() {
+      System.out.println(name + "'s age in human years is " + age * 7 + " years");
   }
 }

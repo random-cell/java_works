@@ -4,10 +4,11 @@ public class TestCases {
     public static void run() {
         Shape s1 = new Circle(5.5, "BLACK", false); 
         System.out.println(s1); 
-        System.out.println(s1.getArea()); 
-        System.out.println(s1.getPerimeter()); 
-        System.out.println(s1.getColor());
-        System.out.println(s1.isFilled());
+        System.out.println(s1.getArea());
+         System.out.println(s1.getPerimeter()); 
+         System.out.println(s1.getColor()); 
+         System.out.println(s1.isFilled()); 
+         System.out.println(s1.getRadius());
 
 
         Circle c1 = (Circle)s1; 
